@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KattaCalculater.Views.Master.AddParty">
+    <ContentPage.Content>
+        <StackLayout Spacing="3" Padding="15">
+            <Label Text="ID" FontSize="Medium" />
+            <Entry x:Name="PartyId" Text="{Binding Id, Mode=TwoWay}" FontSize="Medium" />
+            <Label Text="First Name" FontSize="Medium" />
+            <Entry x:Name="FirstName" Text="{Binding FirstName, Mode=TwoWay}" FontSize="Medium" />
+            <Label Text="Last Name" FontSize="Medium" />
+            <Entry x:Name="LastName" Text="{Binding LastName, Mode=TwoWay}" FontSize="Medium" />
+            <Button Text="Add" Clicked="Button_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
